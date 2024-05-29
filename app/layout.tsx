@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     template: '%s | 白梓君',
     default: seo.title,
   },
+  // icons: `${seo.url.href}/favicon1.ico`,
   description: seo.description,
   keywords: '白梓君,谈嘉昌,前端开发,gnls',
   manifest: '/site.webmanifest',
@@ -42,13 +43,13 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://mywebsite-eight-delta.vercel.app/',
   },
-  // twitter: {
-  //   site: '@thecalicastle',
-  //   creator: '@thecalicastle',
-  //   card: 'summary_large_image',
-  //   title: seo.title,
-  //   description: seo.description,
-  // },
+  twitter: {
+    site: '@gnls666',
+    creator: '@gnls666',
+    card: 'summary_large_image',
+    title: seo.title,
+    description: seo.description,
+  },
   alternates: {
     canonical: url('/'),
     types: {
