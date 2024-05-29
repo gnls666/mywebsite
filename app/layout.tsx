@@ -10,7 +10,7 @@ import { url } from '~/lib'
 import { zhCN } from '~/lib/clerkLocalizations'
 import { sansFont } from '~/lib/font'
 import { seo } from '~/lib/seo'
-import Fav from './icon1.png'
+// import Fav from './icon1.png'
 import AppleFav from './apple-icon.png'
 
 export const metadata: Metadata = {
