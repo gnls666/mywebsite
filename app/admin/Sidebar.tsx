@@ -13,7 +13,7 @@ import {
   TiltedSendIcon,
 } from '~/assets'
 
-import logo from './../apple/apple-icon.png'
+import logo from './../apple-icon.png'
 
 const navigation = [
   { name: '仪表盘', href: '', icon: DashboardIcon },
