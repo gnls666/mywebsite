@@ -47,35 +47,35 @@ export default function Layout({
                   href="https://cali.so"
                   className="text-zinc-700 underline"
                 >
-                  <strong>Cali Castle</strong>
+                  <strong>白's space</strong>
                 </Link>
                 <br />
-                开发者、设计师、细节控、创始人
+                无头衔
               </Text>
               <Text className="text-center">
                 <Link
-                  href="https://cali.so/twitter"
+                  href="https://x.com/gnls666"
                   className="text-xs text-zinc-600 underline"
                 >
                   Twitter
                 </Link>{' '}
                 |&nbsp;
-                <Link
+                {/* <Link
                   href="https://cali.so/youtube"
                   className="text-xs text-zinc-600 underline"
                 >
                   YouTube
                 </Link>{' '}
-                |&nbsp;
+                |&nbsp; */}
                 <Link
-                  href="https://cali.so/github"
+                  href="https://github.com/gnls666"
                   className="text-xs text-zinc-600 underline"
                 >
                   GitHub
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://cali.so/bilibili"
+                  href="https://space.bilibili.com/344465661?spm_id_from=333.1007.0.0"
                   className="text-xs text-zinc-600 underline"
                 >
                   哔哩哔哩

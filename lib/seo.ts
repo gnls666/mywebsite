@@ -1,10 +1,10 @@
 export const seo = {
-  title: 'Cali Castle | 开发者、设计师、细节控、创始人',
+  title: "白梓君's Blog",
   description:
-    '我叫 Cali，一名开发者，设计师，细节控，同时也是佐玩创始人，目前带领着佐玩致力于创造一个充满创造力的工作环境，同时鼓励团队创造影响世界的产品。',
+    '我是白梓君。一个前端开发者，欢迎来到我的空间。这里是我的个人博客，记录了我在技术、生活的零碎思考。欢迎留下你的想法和我交流。',
   url: new URL(
     process.env.NODE_ENV === 'production'
-      ? 'https://cali.so'
+      ? 'https://mywebsite-eight-delta.vercel.app/'
       : 'http://localhost:3000'
   ),
 } as const
