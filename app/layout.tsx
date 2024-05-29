@@ -10,6 +10,8 @@ import { url } from '~/lib'
 import { zhCN } from '~/lib/clerkLocalizations'
 import { sansFont } from '~/lib/font'
 import { seo } from '~/lib/seo'
+import Fav from './icon1.png'
+import AppleFav from './apple-icon.png'
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
@@ -17,7 +19,10 @@ export const metadata: Metadata = {
     template: '%s | 白梓君',
     default: seo.title,
   },
-  // icons: `${seo.url.href}/favicon1.ico`,
+  icons: [
+    { rel: 'icon', url: Fav.src },
+    { rel: 'apple-touch-icon', url: AppleFav.src },
+  ],
   description: seo.description,
   keywords: '白梓君,谈嘉昌,前端开发,gnls',
   manifest: '/site.webmanifest',
