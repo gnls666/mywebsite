@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     template: '%s | 白梓君',
     default: seo.title,
   },
-  icons: { apple: './apple/apple-icon.png' },
   description: seo.description,
   keywords: '白梓君,谈嘉昌,前端开发,gnls',
   manifest: '/site.webmanifest',
