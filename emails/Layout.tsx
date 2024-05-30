@@ -36,7 +36,7 @@ export default function Layout({
             <Hr className="mx-0 my-[20px] h-px w-full bg-zinc-100" />
             <Section>
               <Img
-                src={`${emailConfig.baseUrl}/icon2.png`}
+                src={`${emailConfig.baseUrl}/ava.png`}
                 width="24"
                 height="24"
                 alt="Cali"
@@ -44,7 +44,7 @@ export default function Layout({
               />
               <Text className="text-center">
                 <Link
-                  href="https://mys.gnls.space"
+                  href="https://my.gnls.space"
                   className="text-zinc-700 underline"
                 >
                   <strong>白's space</strong>
@@ -54,28 +54,28 @@ export default function Layout({
               </Text>
               <Text className="text-center">
                 <Link
-                  href="https://x.com/gnls666"
+                  href="https://my.gnls.space/twitter"
                   className="text-xs text-zinc-600 underline"
                 >
                   Twitter
                 </Link>{' '}
                 |&nbsp;
-                {/* <Link
-                  href="https://cali.so/youtube"
+                <Link
+                  href="https://my.gnls.space/youtube"
                   className="text-xs text-zinc-600 underline"
                 >
                   YouTube
                 </Link>{' '}
-                |&nbsp; */}
+                |&nbsp;
                 <Link
-                  href="https://github.com/gnls666"
+                  href="https://my.gnls.space/github"
                   className="text-xs text-zinc-600 underline"
                 >
                   GitHub
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://space.bilibili.com/344465661?spm_id_from=333.1007.0.0"
+                  href="https://my.gnls.space/bilibili"
                   className="text-xs text-zinc-600 underline"
                 >
                   哔哩哔哩

@@ -96,17 +96,17 @@ export function Headline() {
         }}
       >
         <SocialLink
-          href="https://x.com/gnls666"
+          href="https://my.gnls.space/twitter"
           aria-label="我的推特"
           platform="twitter"
         />
         <SocialLink
-          href="https://space.bilibili.com/344465661?spm_id_from=333.1007.0.0"
+          href="https://my.gnls.space/bilibili"
           aria-label="我的 Bilibili"
           platform="bilibili"
         />
         <SocialLink
-          href="https://github.com/gnls666"
+          href="https://my.gnls.space/github"
           aria-label="我的 GitHub"
           platform="github"
         />
