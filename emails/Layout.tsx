@@ -36,7 +36,7 @@ export default function Layout({
             <Hr className="mx-0 my-[20px] h-px w-full bg-zinc-100" />
             <Section>
               <Img
-                src={`${emailConfig.baseUrl}/icon.png`}
+                src={`${emailConfig.baseUrl}/icon2.png`}
                 width="24"
                 height="24"
                 alt="Cali"
@@ -44,7 +44,7 @@ export default function Layout({
               />
               <Text className="text-center">
                 <Link
-                  href="https://cali.so"
+                  href="https://mys.gnls.space"
                   className="text-zinc-700 underline"
                 >
                   <strong>白's space</strong>
