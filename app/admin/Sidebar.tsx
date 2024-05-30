@@ -13,7 +13,7 @@ import {
   TiltedSendIcon,
 } from '~/assets'
 
-import logo from './../apple-icon.jpg'
+import logo from './../apple-icon.png'
 // import logo from './../../public/apple-icon.png'
 
 const navigation = [
