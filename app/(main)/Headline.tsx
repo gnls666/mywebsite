@@ -40,15 +40,6 @@ function OCD() {
   )
 }
 
-function Founder() {
-  return (
-    <span className="group inline-flex items-center">
-      <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-      <span>创始人</span>
-    </span>
-  )
-}
-
 export function Headline() {
   return (
     <div className="max-w-2xl">
@@ -65,7 +56,7 @@ export function Headline() {
       >
         <Developer />，<Designer />，
         <span className="block h-2" />
-        <OCD />，<Founder />
+        <OCD />
       </motion.h1>
       <motion.p
         className="mt-6 text-base text-zinc-600 dark:text-zinc-400"
