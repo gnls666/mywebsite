@@ -47,14 +47,6 @@ export async function POST(req: NextRequest) {
     const token = crypto.randomUUID()
 
     if (env.NODE_ENV === 'production') {
-      console.log('send email', {
-        from: emailConfig.from,
-        to: parsed.email,
-        subject: '来自 梓君 的订阅确认',
-        react: ConfirmSubscriptionEmail({
-          link: url(`confirm/${token}`).href,
-        }),
-      })
       await resend.emails.send({
         from: emailConfig.from,
         to: parsed.email,
