@@ -9,7 +9,7 @@ const NewGuestbookEmail = ({
   link = 'https://my.gnls.space/guestbook',
   userFirstName = 'Zijun',
   userLastName = 'Bai',
-  userImageUrl = 'https://my.gnls.space/ava.png',
+  userImageUrl = 'https://my.gnls.space/icon2.png',
   commentContent = '*测试评论*\n- Wow wtf\n- Cool',
 }: {
   link?: string | null

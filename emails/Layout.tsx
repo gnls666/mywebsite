@@ -36,7 +36,7 @@ export default function Layout({
             <Hr className="mx-0 my-[20px] h-px w-full bg-zinc-100" />
             <Section>
               <Img
-                src={`${emailConfig.baseUrl}/ava.png`}
+                src={`${emailConfig.baseUrl}/icon2.png`}
                 width="24"
                 height="24"
                 alt="Cali"
@@ -50,7 +50,6 @@ export default function Layout({
                   <strong>白's space</strong>
                 </Link>
                 <br />
-                无头衔
               </Text>
               <Text className="text-center">
                 <Link
