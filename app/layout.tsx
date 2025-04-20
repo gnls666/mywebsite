@@ -14,12 +14,12 @@ import { seo } from '~/lib/seo'
 export const metadata: Metadata = {
   metadataBase: seo.url,
   title: {
-    template: '%s | 白梓君',
+    template: '%s | 谈嘉昌',
     default: seo.title,
   },
   // icons: [{ rel: 'apple-touch-icon', url: '/apple-icon.png' }],
   description: seo.description,
-  keywords: '白梓君,谈嘉昌,前端开发,gnls',
+  keywords: '谈嘉昌,谈嘉昌,前端开发,gnls',
   manifest: '/site.webmanifest',
   robots: {
     index: true,
@@ -35,10 +35,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       default: seo.title,
-      template: '%s | 白梓君',
+      template: '%s | 谈嘉昌',
     },
     description: seo.description,
-    siteName: "白梓君's Blog",
+    siteName: "谈嘉昌's Blog",
     locale: 'zh_CN',
     type: 'website',
     url: 'https://mywebsite-eight-delta.vercel.app/',
