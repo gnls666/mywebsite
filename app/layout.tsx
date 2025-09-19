@@ -3,6 +3,7 @@ import './clerk.css'
 import './prism.css'
 
 import { ClerkProvider } from '@clerk/nextjs'
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata, Viewport } from 'next'
 
 import { ThemeProvider } from '~/app/(main)/ThemeProvider'
@@ -86,6 +87,7 @@ export default function RootLayout({
           >
             {children}
           </ThemeProvider>
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
