@@ -17,6 +17,7 @@ import {
 import { usePathname } from 'next/navigation'
 import React from 'react'
 
+import { Activity } from '~/app/(main)/Activity'
 import { NavigationBar } from '~/app/(main)/NavigationBar'
 import { ThemeSwitcher } from '~/app/(main)/ThemeSwitcher'
 import {
@@ -271,31 +272,18 @@ export function Header() {
                 <NavigationBar.Desktop className="pointer-events-auto relative z-50 hidden md:block" />
               </div>
               <motion.div
-                className="flex justify-end gap-3 md:flex-1"
+                className="flex items-center justify-end gap-3 md:flex-1"
                 initial={{ opacity: 0, y: -20, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
               >
+                <div className="pointer-events-auto hidden sm:block">
+                  <Activity />
+                </div>
                 <UserInfo />
                 <div className="pointer-events-auto">
                   <ThemeSwitcher />
                 </div>
               </motion.div>
-              {/* 
-              <AnimatePresence>
-                {!isHomePage && (
-                  <motion.div
-                    className="absolute left-14 top-1 flex h-8 items-center"
-                    initial={{ opacity: 0, scale: 0.3 }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                      transition: { delay: 1 },
-                    }}
-                  >
-                    <Activity />
-                  </motion.div>
-                )}
-              </AnimatePresence> */}
             </div>
           </Container>
         </div>

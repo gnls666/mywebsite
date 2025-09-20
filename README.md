@@ -35,3 +35,24 @@ pnpm build
 ```
 
 通过 [Vercel](https://vercel.com/) 一键部署。
+
+### Activity 状态同步
+
+站点的 Activity 组件会从 Upstash Redis 读取以下键值：
+
+| 键名 | 类型 | 说明 |
+| --- | --- | --- |
+| `activity:app` | `string` | 当前前台应用的标识，用于选择 `/public/apps/` 下对应的图标 |
+| `activity:track` | `object \| null` | 当前播放的音轨信息，字段包含 `title`、可选的 `artist`、`app`、`artwork` |
+| `activity:updatedAt` | `string` | ISO 8601 时间戳，记录最近一次同步时间 |
+
+可以通过脚本 `pnpm activity:update` 快速写入这些键，脚本会读取如下环境变量：
+
+- `ACTIVITY_APP`
+- `ACTIVITY_TRACK_TITLE`
+- `ACTIVITY_TRACK_ARTIST`
+- `ACTIVITY_TRACK_APP`
+- `ACTIVITY_TRACK_ARTWORK`
+- `ACTIVITY_CLEAR_TRACK`（可选，设置为 `true` 可清空曲目状态）
+
+脚本会自动更新时间戳 `activity:updatedAt`，并在缺省 `ACTIVITY_TRACK_APP` 时回落到 `ACTIVITY_APP` 或 `now-playing`。请确保新添加的应用或状态在 `public/apps/` 中有同尺寸的 PNG 图标。
